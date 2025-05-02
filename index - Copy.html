@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="sodikon.png">
+  <title>S.O.D - 4MA Jelentkezés</title>
+  <style>
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #000000, #252525);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .sod-img {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sod-img img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.452);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.301);
+    }
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      height: 1000px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      color: #aaa;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      background: linear-gradient(270deg, #949494, #3b3b3b, #000000);
+      background-size: 600% 600%;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      animation: moveGradient 5s ease infinite;
+      font-weight: bold;
+    }
+
+    @keyframes moveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    hr {
+     width: 70%;  
+     margin: 2rem auto; 
+     border: none;  
+     border-top: 4px solid white; 
+     box-shadow: 0 0 10px white;  
+    }
+
+    h3 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="sod-img">
+      <img src="sodikon.png" alt="S.O.D Logo">
+    </div>
+
+    <h1>S.O.D - 4MA Jelentkezési Lap</h1>
+
+    <div class="card">
+        <h2>Google Űrlap</h2>
+        <p class="center-text">Töltsd ki az alábbi űrlapot a jelentkezéshez:</p>
+        <h2>Feltételeink jelentkezéshez:</h2>
+        <p>Betöltött 16. életév</p>
+        <p>Büntetetlen előélet igazolása</p>
+        <p>Aktivitás</p>
+        <p>Szabályzat teljesmértékű ismerete</p>
+        <h3>Az S.O.D nem támogatja a céltalan erőszakot és a felesleges fegyverhasználatot!</h3>
+        <hr></hr>
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3A18i2Ub9JV4WZH5ykA4tJur47j-Ny7bUWGRgRJI9hVgwUA/viewform?usp=sf_link">Betöltés...</iframe>
+    </div>
+  
+    <div class="footer">
+      &copy; 2025 S.O.D Crew
+    </div>
+
+  </div>
+</body>
+</html>
